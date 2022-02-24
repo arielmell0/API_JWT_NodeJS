@@ -12,6 +12,14 @@ app.get('/', (req, res) => {
     res.status(200).json({ message: 'Bem vindo à nossa API!' })
 })
 
-app.listen(port, () => {
-    console.log(`Servidor iniciado em http://localhost:${port}`)
+mongoose.connect(process.env.CONNECTIONSTRING)
+    .then(() => {
+        app.emit('bdOn')
+        console.log('Conectado ao banco de dados.')
+    })
+
+app.on('bdOn', () => {
+    app.listen(port, () => {
+        console.log(`Servidor iniciado em http://localhost:${port}`)
+    })
 })
