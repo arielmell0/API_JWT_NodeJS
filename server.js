@@ -7,10 +7,14 @@ const jwt = require('jsonwebtoken')
 const app = express()
 const port = 3000
 
+const usersRoutes = require('./src/routes/usersRoutes')
+
 // Open Route - Public Route
 app.get('/', (req, res) => {
     res.status(200).json({ message: 'Bem vindo à nossa API!' })
 })
+
+app.use(usersRoutes)
 
 mongoose.connect(process.env.CONNECTIONSTRING)
     .then(() => {
