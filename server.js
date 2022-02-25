@@ -9,6 +9,9 @@ const port = 3000
 
 const usersRoutes = require('./src/routes/usersRoutes')
 
+// Configurar JSON response
+app.use(express.json())
+
 // Open Route - Public Route
 app.get('/', (req, res) => {
     res.status(200).json({ message: 'Bem vindo à nossa API!' })

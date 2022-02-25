@@ -4,6 +4,6 @@ const router = require('express').Router()
 const usersController = require('../Controllers/usersController')
 
 // Registrar usuário
-router.post('/user', usersController.userRegister)
+router.post('/auth/register', usersController.userRegister)
 
 module.exports = router
