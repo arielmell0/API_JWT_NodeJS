@@ -89,3 +89,14 @@ exports.userLogin = async(req, res) => {
         res.status(500).jason({ message: 'Ops, ocorreu um erro no servidor!' })
     }
 }
+
+// Rota privada para procurar usuário (somente consegue encontrar quem estiver logado consegue acessar)
+exports.findUser = async(req, res) => {
+    const id = req.params.id
+
+    const user = await UserModel.findById(id, '-password') // -password filtra para a senha n vir no get
+
+    if(!user) {
+        return res.status(404).json({ message: 'Usuário não encontrado!' })
+    } 
+}

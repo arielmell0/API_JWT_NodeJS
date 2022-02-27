@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken')
 const app = express()
 const port = 3000
 
-const usersRoutes = require('./src/routes/usersRoutes')
+const usersRoutes = require('./src/Routes/usersRoutes')
 
 // Configurar JSON response
 app.use(express.json())
