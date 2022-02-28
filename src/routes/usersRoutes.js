@@ -11,6 +11,6 @@ router.post('/auth/register', usersController.userRegister)
 router.post('/auth/login', usersController.userLogin)
 
 // Buscar usuario por id (rota privada, só para quem possui o token)
-router.get('/users/:id', usersController.findUser)
+router.get('/users/:id', usersController.checkToken, usersController.findUser)
 
 module.exports = router
