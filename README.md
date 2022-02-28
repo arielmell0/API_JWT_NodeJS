@@ -10,7 +10,7 @@ Criado para treinar alguns tópicos aprendidos em alguns cursos de NodeJS
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="mensagem boas vindas" src="https://s10.gifyu.com/images/home6c9b58150fa9e71c.gif" width="1080px">
 </p>
--------------------------------------------------------------------------------------------------------------------------------------<br><br>
+---------------------------------------------------------------------------------------------------------------------------------<br><br>
 
 #### Cadastrando um usuário na nossa API seguindo a seguinte estrutura:
 ````
@@ -24,13 +24,13 @@ Criado para treinar alguns tópicos aprendidos em alguns cursos de NodeJS
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="cadastrando usuario" src="https://s10.gifyu.com/images/registro_usuario.gif" width="1080px">
 </p>
--------------------------------------------------------------------------------------------------------------------------------------<br><br>
+---------------------------------------------------------------------------------------------------------------------------------<br><br>
 
 #### Realizando o Login do nosso usuário o que nos dá direito ao acesso a algumas rotas privadas com o nosso Token
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="login do usuario e acesso ao nosso token" src="https://s10.gifyu.com/images/login_usuario.gif" width="1080px">
 </p>
--------------------------------------------------------------------------------------------------------------------------------------<br><br>
+---------------------------------------------------------------------------------------------------------------------------------<br><br>
 
 #### Buscando usuarios pelo seu ID, o usuário somente irá conseguir acessar os dados de outros usuários caso esteja logado e possua um Token válido
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
