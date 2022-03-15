@@ -86,7 +86,7 @@ exports.userLogin = async(req, res) => {
         res.status(200).json({ message: 'Autenticação realizada com sucesso!', token })
     } catch (error) {
         console.log(error)
-        res.status(500).jason({ message: 'Ops, ocorreu um erro no servidor!' })
+        res.status(500).json({ message: 'Ops, ocorreu um erro no servidor!' })
     }
 }
 
